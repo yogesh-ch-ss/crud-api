@@ -13,19 +13,9 @@ app.use(express.urlencoded({ extended: false })); // middleware to use form url 
 // routes
 app.use("/api/products", productRoute);
 
-// GET API
-
 app.get("/", (req, res) => {
   res.send("Hello from Node API Server");
 });
-
-// POST API
-
-// Update API
-// app.put(); -> used to update -> full replacenent of the data
-// app.patch(); -> also used to update -> partial replacement (fields)
-
-// DELETE API
 
 // connect mongodb and listen on port
 mongoose
